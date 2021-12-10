@@ -33,6 +33,15 @@
             <div class="media-content">
               <p class="title is-4">Aged Cheddar</p>
               <p class="subtitle is-6 price">$8,95</p>
+              <script>
+function showDetails(animal) {
+  var animalType = animal.getAttribute("data-animal-type");
+  alert("The " + animal.innerHTML + " is a " + animalType + ".");
+}
+</script>
+<ul>
+  <li onclick="showDetails(this)" id="subtitle is-6 price" data-animal-type="subtitle is-6 price">Owl</li>
+  </ul>
             </div>
           </div>
 
